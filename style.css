@@ -1,3 +1,31 @@
+:root {
+  
+  --HEADER-BGCOLOR: #31343d;
+  --HEADER-H1-BGCOLOR: #92cccd;
+  --HEADER-H1-LINK-COLOR: #31343d;
+
+  --NAV--LINK-COLOR: #92cccd;
+  --NAV--LINK-BORDER-BOTTOM: #92cccd;
+  --NAV--LINK-HOVER: rgba(255, 255, 255, 0.25);
+
+  --HERO-H2-BGCOLOR: #92cccd;
+  --HERO-H2-COLOR: #31343d;
+
+  --SECTION-H2-COLOR: #445876;
+  --SECTION-BORDER: #445876;
+
+  --PORTFOLIO-LINK-COLOR: #31343d;
+  --IMAGE-BORDER: #92cccd;
+  --FIGURE-CAPTION: #92cccd;
+
+  --BOTTOM-LINK-COLOR: #445876;
+  --BOTTOM-LINK-HOVER: #92cccd;
+
+  /* FONTS */
+  --BODY-FONT-FAMILY: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,12 +33,30 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--BODY-FONT-FAMILY)
   line-height: 1.5;
 }
 
-h1,
-h2,
+header{
+  background-color: var(--HEADER-BGCOLOR);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+h1{
+  background-color: var(--HEADER-H1-BGCOLOR);
+  font-size: 50px;
+  line-height: normal;
+  padding: 0 15px 0 10%;
+}
+
+header h2{
+
+}
+
 h3,
 h4,
 h5,

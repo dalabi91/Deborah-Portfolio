@@ -7,6 +7,7 @@
   --H2-FCOLOR: #4f5465;
   --border-color: #4f5465;
   --h2-fontsize: 30px;
+
   
   
   /* FONTS */
@@ -21,13 +22,18 @@
  
 }
 
+html{
+  background-color: #d6deea;
+  scroll-behavior: smooth;
+  }
+
 body {
   margin: 0;
   padding: 0;
   font-family: var(--FONT-FAMILY)
  
 }
-
+/* HEADER */
 header{
   background-color: var(--HEADER-BGCOLOR);
   display: flex;
@@ -52,7 +58,7 @@ header{
 
 }
 
-
+/* NAV */
 
 .topNav{
 display: flex;
@@ -75,6 +81,8 @@ display: flex;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
   background-color:#15171b;
 }
+
+/* BANNER */
 
 .hero-banner{
   background-image: url("/images/02-hero-bg.jpg");
@@ -99,6 +107,8 @@ position: relative;
   bottom: 15px;
   right: 5%;
 }
+
+/* ABOUT */
 
 .about-section{
   display: grid;
@@ -131,36 +141,40 @@ position: relative;
   grid-area: aboutR;
 }
 
+/* WORK */
 
 .work-section{
-
   display: grid;
   margin: 2rem;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: repeat(20% auto 20%);
   grid-template-rows: auto;
   grid-template-areas: 
   "aboutL aboutC aboutR";
 }
 
-.workL h2{
+.workL{
   grid-area: aboutL;
   border-right: 4px solid;
-  margin-top: 2rem;
   border-color: var(--border-color);
-  color: var(--H2-FCOLOR);
   text-align: right;
+  
+}
+.workL h2{
+  color: var(--H2-FCOLOR);
+  margin-top: 2rem;
   margin-right: 5px;
   font-size: var(--h2-fontsize);
-  padding: 100px
+
 }
 
 
-#project{
+.workC{
   grid-area: workC;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 300px)  ;
-  grid-template-rows: repeat(4, 200px) ;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr)  ;
+  grid-template-rows: repeat(4, 1fr) ;
   grid-template-areas: 
   "project1 project1 project1"
   "project2 project2 project4"
@@ -169,50 +183,82 @@ position: relative;
   ;
 }
 
-.workC{
-
-align-items: center;
-margin: 2.3rem;
-justify-content: center;
-cursor: pointer;
+.Project{
+  /* position: relative; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  margin: 2px;
+  transition: all 0.2s ease-in-out;
 }
 
-.workC p{
-  font-size:small ;
+.overlay{
+  background-color: #98b7b8;
+  /* position: absolute; */
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: absolute; */
+  bottom: 0;
+  height: 45px;
+  width: 100px;
+  background-color: var(--H2-BGCOLOR);
+  color: var(--H2-FCOLOR);
+  align-items: center;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+.label p{
+  font-size:15px ;
+}
+.label h3{
+  font-size: 25px;
 }
 
 .project1{
 grid-template-areas: project1;
-background-image: url(/images/project1.jpg);
+background-image: url(../images/project1.jpg);
 
 }
 
 .project2{
   grid-template-areas: project2;
-  background-image: url(/images/02-portfolio-2.jpg);
+  background-image: url(../images/02-portfolio-2.jpg);
+ 
 }
 
 .project3{
   grid-template-areas: project3;
-background-image: url(/images/02-run-buddy.jpg);
+background-image: url(../images/02-run-buddy.jpg);
+
 }
 
 .project4{
 
   grid-template-areas: project4;
-  background-image: url(/images/project4.jpg);
+  background-image: url(../images/project4.jpg);
+ 
 
 }
 
 .project5{
 
   grid-template-areas: project3;
-background-image: url(/images/02-portfolio-4.jpg);
+background-image: url(../images/02-portfolio-4.jpg);
+
 }
 
 #contact{
   display: flex;
-  border-right: 4px solid;
   border-color: var(--border-color);
   color: var(--H2-FCOLOR);
 }
@@ -264,19 +310,12 @@ background-image: url(/images/02-portfolio-4.jpg);
     background-color:#a5a7aa;
   }
 
-@media only screen and (max-width: 600px){
-header {
-  height: 6rem;
-  flex-direction: column;
-}
-
-.name-wrapper{
-  padding: 0px 62px
-}
 
 
 
-}
+
+
+
 
 
 

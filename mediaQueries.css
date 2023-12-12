@@ -1,0 +1,63 @@
+@media only screen and (max-width: 600px){
+    header {
+      height: 6rem;
+      flex-direction: column;
+    }
+    
+    .name-wrapper{
+      padding: 0px 62px
+    }
+    
+    .about-section {
+      justify-content: center;
+      grid-template-columns: 70vw;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 
+        "aboutL"
+        "aboutC"
+        "aboutR";
+    }
+    
+    
+    .aboutL h2{
+      border-bottom: 4px solid var(--border-color);
+        text-align: start;
+        margin-bottom: 3vh;
+        padding-bottom: 3vh;
+        border-right: none;
+       
+    }
+    
+    .workL{
+      border-bottom: 4px solid var(--border-color);
+        text-align: start;
+        margin-bottom: 3vh;
+        padding-bottom: 3vh;
+        border-right: none;
+       
+    }
+    
+    .workC {
+      justify-content: center;
+      grid-template-columns: 70vw;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: 
+        "workL"
+        "workC"
+        "workR";
+    }
+    
+    .workC{
+      grid-template-columns: 70vw;
+      grid-template-rows: repeat(5, 125px);
+      grid-template-areas: 
+        "project1 "
+        "project2 "
+        "project3 "
+        "project4 "
+        "project5 ";
+    }
+    .label {
+      height: 25px;
+    }
+}

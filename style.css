@@ -6,7 +6,7 @@
   --H2-BGCOLOR: #92cccd;
   --H2-FCOLOR: #4f5465;
   --border-color: #4f5465;
-  --h2-fontsize: 20px
+  --h2-fontsize: 30px;
   
   
   /* FONTS */
@@ -52,12 +52,6 @@ header{
 
 }
 
-/* .name h2{
-  font-size: 10px;
-  line-height: normal;
-   
-} */
-
 
 
 .topNav{
@@ -92,9 +86,6 @@ height: 140px;
 position: relative;
 }
 
- /* tablet  */
-
- /* mobile */
 
 .hero-banner h2{
   background-color: var(--H2-BGCOLOR);
@@ -109,86 +100,149 @@ position: relative;
   right: 5%;
 }
 
-.about-section{
-  margin-bottom: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
-  display: flex;
+#about{
+  display: grid;
+  margin: 6rem;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: auto;
+  grid-template-areas: aboutL aboutC aboutR;
 }
 
-.about-section h2{
-  border-right: 2px solid;
+.aboutL{
+  grid-area: aboutL;
+  border-right: 4px solid;
+  margin-top: 4rem;
   border-color: var(--border-color);
   color: var(--H2-FCOLOR);
-  flex-wrap: nowrap;
+  /* text-align: left; */
+}
+.aboutL h2{
+  margin-right: 5px;
+  font-size: var(--h2-fontsize);
+  padding:15px
+}
+
+.aboutC{
+  grid-area: aboutC;
+  display: flex;
+  justify-content: center;
+  padding: 4px 20px;
+}
+
+.aboutR{
+  grid-area: aboutR;
+}
+
+
+#work{
   
+  display: grid;
+  margin: 6rem;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: auto;
+  grid-template-areas: aboutL aboutC aboutR;
 }
 
-.work-section{
-  margin-bottom: 20px;
-  margin-top: 30px;
-  display: flex;
-}
-.work-section h2{
-  border-right: 2px solid;
+.workL{
+  grid-area: aboutL;
+  border-right: 4px solid;
   border-color: var(--border-color);
   color: var(--H2-FCOLOR);
+  text-align: left;
+  display: flex;
 }
-
-.project {
+.workL h2{
+  margin-right: 5px;
+  font-size: var(--h2-fontsize);
+  padding:15px
+}
+.workC{
+  grid-area: workC;
   display: grid;
   justify-content: center;
-  grid-template-columns: 200px 200px 200px ;
-  grid-template-rows: 500px 200px;
+  grid-template-columns: repeat(4, 200px)  ;
+  grid-template-rows: repeat(5, 160px) ;
   grid-template-areas: 
-  "main orange green" 
-  "main blue fuchsia"
+ "project1 project1 project1 project1"
+ "project1 project1 project1 project1"
+ "project2 project2 project2 project2"
+ "project3 project3 project4 project4"
+ "project3 project3 project5 project5"
+
   ;
 }
 
-.item1{
-  background-color: red;
-grid-area: main;
-}
-
-.item2{
-  background-color: blue;
-  grid-area: blue
-}
-
-.item3{
-  background-color: green;
-  grid-area: green
+.project{
+  background-position: center;
+  background-size: cover;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
 
 }
 
-.item4{
-  background-color: orange;
-  grid-area: orange
+.project1{
+grid-template-areas: project1;
+background-image: url(/images/project1.jpg);
+cursor: pointer;
 
 }
 
-.item5{
-  background-color: fuchsia;
-  grid-area: fuchsia
+.project2{
+  grid-template-areas: project2;
+  background-image: url(/images/02-portfolio-2.jpg);
+}
+
+.project3{
+  grid-template-areas: project3;
+background-image: url(/images/02-run-buddy.jpg);
+}
+
+.project4{
+
+  grid-template-areas: project4;
+  background-image: url(/images/project4.jpg);
 
 }
 
+.project5{
 
-
-
-
-
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+  grid-template-areas: project3;
+background-image: url(/images/02-portfolio-4.jpg);
 }
 
-p {
-  margin: 0;
+#contact{
+  display: flex;
+  border-right: 4px solid;
+  border-color: var(--border-color);
+  color: var(--H2-FCOLOR);
 }
+.contact{
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1%;
+  }
+  
+  .contact li{
+    padding: 5px;
+    list-style: none;
+  }
+  
+  .contact a{
+    display: flex;
+    color: var(--H1-BGCOLOR);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    
+  }
+  .contact a:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);;
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    background-color:#a5a7aa;
+  }
 
 @media only screen and (max-width: 600px){
 header {

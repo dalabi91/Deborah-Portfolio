@@ -231,7 +231,7 @@ background-image: url(/images/02-portfolio-4.jpg);
   }
   
   .contact a{
-    display: flex;
+  
     color: var(--H1-BGCOLOR);
     font-size: 20px;
     text-decoration: none;

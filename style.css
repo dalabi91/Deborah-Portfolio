@@ -313,22 +313,24 @@ position: relative;
  
    .label{
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     justify-items: center;
     height: 180px;
     width: 250px;
 
+
     color: var(--H2-FCOLOR);
     
-    border-bottom-left-radius: 0.4rem;
-    border-bottom-right-radius: 0.4rem;
+    /* border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem; */
   
   }
   .label p{
     font-size:15px ;
     background-color: var(--H2-BGCOLOR);
+  
 
   }
   .label h3{

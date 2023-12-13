@@ -280,8 +280,8 @@ position: relative;
   }
   .project3{
     grid-template-areas: project3;
-  background-image: url(./images_png/02-run-buddy.png)
-  cursor: not-allowed;
+  background-image: url(./images_png/02-run-buddy.png);
+  cursor:not-allowed;
   /* grid-column-start: 1;
     grid-column-end: 3;
    grid-row-start: 5;

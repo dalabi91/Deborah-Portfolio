@@ -14,7 +14,7 @@
 - [**Youtube**](https://www.youtube.com/watch?v=3elGSZSWTbM&t=24s&pp=ygUPZ3JpZCB2cyBmbGV4Ym94)
 - [**MDN Web Docs**](https://developer.mozilla.org/)
 
-## Destop
+## Desktop
 <!-- input screenshoot -->
 ![Destop](./images_png/media%20Q/desktop%20view.png)
 ## Media Query

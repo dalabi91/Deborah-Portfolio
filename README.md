@@ -15,6 +15,10 @@
 - [**MDN Web Docs**](https://developer.mozilla.org/)
 
 ## Destop
-
-
+<!-- input screenshoot -->
+![Destop](./images_png/media%20Q/desktop%20view.png)
 ## Media Query
+
+### Max width 600px
+<!-- input screeshoot -->
+![Max 600px](./images_png/media%20Q/max_600px.png)

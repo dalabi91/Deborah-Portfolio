@@ -159,10 +159,11 @@ position: relative;
   
 }
 
-.aboutC p{
+.aboutC article{
   grid-area: aboutC;
+  display: flex;
   justify-content: center;
-  padding: 0px 43px;
+  max-width: 720px;
   margin-top: 4rem;
 }
 
@@ -236,8 +237,6 @@ position: relative;
 .workC{
   grid-area: workC;
   display: grid;
-  justify-content: center;
-  align-content: center;
   grid-template-columns: ( 150px 150px 150px );
   grid-template-rows: (120px 120px 120px 120px) ;
   gap: 20px;
@@ -257,9 +256,10 @@ position: relative;
   
 }
 
+
 .project1{
-  grid-template-areas: project1;
-  background-image: url(./images_png/project1.png);
+  grid-area: project1;
+  background-image: url(../images_png/project1.png);
   cursor: not-allowed;
   /* grid-column-start: 1;
   grid-column-end: 4;
@@ -269,8 +269,8 @@ position: relative;
   }
   
   .project2{
-    grid-template-areas: project2;
-    background-image: url(./images_png/02-portfolio-2.png);
+    grid-area: project2;
+    background-image: url(../images_png/02-portfolio-1.png);
     cursor: not-allowed;
     /* grid-column-start: 3;
     grid-column-end: 4;
@@ -279,8 +279,8 @@ position: relative;
    */
   }
   .project3{
-    grid-template-areas: project3;
-  background-image: url(./images_png/02-run-buddy.png);
+    grid-area: project3;
+  background-image: url(../images_png/02-run-buddy.png);
   cursor:not-allowed;
   /* grid-column-start: 1;
     grid-column-end: 3;
@@ -290,8 +290,8 @@ position: relative;
   
   .project4{
   
-    grid-template-areas: project4;
-    background-image: url(./images_png/project4.png);
+    grid-area: project4;
+    background-image: url(../images_png/css\ cheatsheet.png);
     cursor: pointer;
     /* grid-column-start: 1;
     grid-column-end: 3;
@@ -301,13 +301,24 @@ position: relative;
   
   .project5{
   
-    grid-template-areas: project5;
+  grid-area: project5;
   background-image: url(./images_png/02-portfolio-4.png);
   cursor: not-allowed;
+
   /* grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6; */
+  }
+  .project{
+    
+  position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+	transition: all 0.3s ease-in-out;
   }
 
  
@@ -319,12 +330,8 @@ position: relative;
     justify-items: center;
     height: 180px;
     width: 250px;
-
-
     color: var(--H2-FCOLOR);
-    
-    /* border-bottom-left-radius: 0.4rem;
-    border-bottom-right-radius: 0.4rem; */
+  
   
   }
   .label p{

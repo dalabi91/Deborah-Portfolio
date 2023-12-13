@@ -22,3 +22,7 @@
 ### Max width 600px
 <!-- input screeshoot -->
 ![Max 600px](./images_png/media%20Q/max_600px.png)
+
+### Max width 1024px
+
+![Max 1024px](./images_png/media%20Q/max%201024.png)

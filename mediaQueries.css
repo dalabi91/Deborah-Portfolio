@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 0px) and (max-width: 600px){
     header {
       height: 6rem;
       flex-direction: column;
@@ -60,4 +60,65 @@
         "project5 ";
     }
     
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+ 
+  
+  .name-wrapper{
+    padding: 0px 62px
+  }
+  /* ! about */
+  .about-section {
+    justify-content: center;
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+      "aboutL"
+      "aboutC"
+      "aboutR";
+  }
+  
+  
+  .aboutL h2{
+    border-bottom: 4px solid var(--border-color);
+      text-align: start;
+      margin-bottom: 3vh;
+      padding-bottom: 3vh;
+      border-right: none;
+     
+  }
+  
+/* ! work */
+  .work-section {
+    justify-content: center;
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+      "workL"
+      "workC"
+      "workR";
+  }
+
+  .workL{
+      border-bottom: 4px solid var(--border-color);
+        text-align: start;
+        margin-bottom: 3vh;
+        padding-bottom: 3vh;
+        border-right: none;
+       
+    }
+    
+  
+  .workC{
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(5, 125px);
+    grid-template-areas: 
+      "project1 "
+      "project2 "
+      "project3 "
+      "project4 "
+      "project5 ";
+  }
+  
 }

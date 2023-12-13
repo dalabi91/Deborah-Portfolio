@@ -98,7 +98,7 @@ display: flex;
 /* BANNER */
 
 .hero-banner{
-background-image: url("/images_png/02-hero-bg.png");
+background-image: url("./images_png/02-hero-bg.png");
 background-position: top;
 margin-top:0%;
 background-size: cover;
@@ -259,7 +259,7 @@ position: relative;
 
 .project1{
   grid-area: project1;
-  background-image: url(../images_png/project1.png);
+  background-image: url(./images_png/project1.png);
   cursor: not-allowed;
   /* grid-column-start: 1;
   grid-column-end: 4;
@@ -270,7 +270,7 @@ position: relative;
   
   .project2{
     grid-area: project2;
-    background-image: url(../images_png/02-portfolio-1.png);
+    background-image: url(./images_png/02-portfolio-1.png);
     cursor: not-allowed;
     /* grid-column-start: 3;
     grid-column-end: 4;
@@ -280,7 +280,7 @@ position: relative;
   }
   .project3{
     grid-area: project3;
-  background-image: url(../images_png/02-run-buddy.png);
+  background-image: url(./images_png/02-run-buddy.png);
   cursor:not-allowed;
   /* grid-column-start: 1;
     grid-column-end: 3;
@@ -291,7 +291,7 @@ position: relative;
   .project4{
   
     grid-area: project4;
-    background-image: url(../images_png/css\ cheatsheet.png);
+    background-image: url(./images_png/css\ cheatsheet.png);
     cursor: pointer;
     /* grid-column-start: 1;
     grid-column-end: 3;
@@ -324,9 +324,9 @@ position: relative;
  
    .label{
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction:column;
     justify-content: space-between;
-    align-items: stretch;
+    /* align-items: stretch; */
     justify-items: center;
     height: 180px;
     width: 250px;

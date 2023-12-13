@@ -51,7 +51,7 @@
     
     .workC{
       grid-template-columns: 70vw;
-      grid-template-rows: repeat(5, 125px);
+      grid-template-rows: repeat(5, 1fr);
       grid-template-areas: 
         "project1 "
         "project2 "

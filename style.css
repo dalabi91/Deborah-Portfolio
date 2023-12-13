@@ -21,6 +21,7 @@
   margin: 0;
  
 }
+/* GENERAL */
 
 html{
   background-color: #d6deea;
@@ -33,7 +34,9 @@ body {
   font-family: var(--FONT-FAMILY)
  
 }
+
 /* HEADER */
+
 header{
   background-color: var(--HEADER-BGCOLOR);
   display: flex;
@@ -107,7 +110,19 @@ position: relative;
   bottom: 15px;
   right: 5%;
 }
+/* Avater */
 
+.avater{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.avater-img{
+  height: auto;
+  border-radius: 15%;
+  width: clamp(100px, 15px, 150px);
+}
 /* ABOUT */
 
 .about-section{
@@ -125,7 +140,7 @@ position: relative;
   border-color: var(--border-color);
   color: var(--H2-FCOLOR);
   text-align: right;
-  margin-right: 5px;
+  margin-right: -14px;
   font-size: var(--h2-fontsize);
   padding:15px
 }
@@ -141,128 +156,183 @@ position: relative;
   grid-area: aboutR;
 }
 
+
+
+/* .main {
+	display: grid;
+	grid-template-columns: auto 1200px auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"about-section about-section about-section"
+		"work-section work-section work-section"
+		"contact-section contact-section contact-section";
+
+	margin: 5rem 0 1rem 0;
+} 
+
+#about {
+	grid-area: about;
+}
+#work {
+	grid-area: work;
+}
+#contact {
+	grid-area: contact;
+
+} */
+
 /* WORK */
 
 .work-section{
   display: grid;
-  margin: 2rem;
-  grid-template-columns: repeat(20% auto 20%);
+  grid-template-columns:(20% auto 20%);
   grid-template-rows: auto;
   grid-template-areas: 
-  "aboutL aboutC aboutR";
+  "workL workC workR";
+
+  margin-top: 4rem;
 }
 
 .workL{
-  grid-area: aboutL;
+  grid-area: workL;
   border-right: 4px solid;
   border-color: var(--border-color);
+  color: var(--H2-FCOLOR);
   text-align: right;
-  
 }
 .workL h2{
-  color: var(--H2-FCOLOR);
-  margin-top: 2rem;
-  margin-right: 5px;
-  font-size: var(--h2-fontsize);
+  
+    grid-area: aboutL;
+
+    margin-top: 0;
+    border-color: var(--border-color);
+    color: var(--H2-FCOLOR);
+    text-align: right;
+    margin-right: 12px;
+    font-size: var(--h2-fontsize);
+    padding: 15px;
 
 }
 
+.workR{
+  grid-area: workR;
+}
 
 .workC{
   grid-area: workC;
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(3, 1fr)  ;
-  grid-template-rows: repeat(4, 1fr) ;
+  grid-template-columns: ( 150px 150px 150px );
+  grid-template-rows: (120px 120px 120px 120px) ;
   grid-template-areas: 
+
   "project1 project1 project1"
-  "project2 project2 project4"
-  "project2 project2 project4"
-  "project3 project3 project5"
+  "project1 project1 project1"
+  "project4 project4 project2"
+  "project4 project4 project2"
+  "project3 project3 project5" 
   ;
+
+  
 }
 
-.Project{
-  /* position: relative; */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2px;
-  margin: 2px;
-  transition: all 0.2s ease-in-out;
-}
-
-.overlay{
-  background-color: #98b7b8;
-  /* position: absolute; */
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
-  border-radius: 2px;
-  transition: all 0.2s ease-in-out;
-}
-
-.label{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* position: absolute; */
-  bottom: 0;
-  height: 45px;
-  width: 100px;
-  background-color: var(--H2-BGCOLOR);
-  color: var(--H2-FCOLOR);
-  align-items: center;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-}
-.label p{
-  font-size:15px ;
-}
-.label h3{
-  font-size: 25px;
+.workC >div{
+  border: 1px solid black;
+  
 }
 
 .project1{
-grid-template-areas: project1;
-background-image: url(../images/project1.jpg);
-
-}
-
-.project2{
-  grid-template-areas: project2;
-  background-image: url(../images/02-portfolio-2.jpg);
+  grid-template-areas: project1;
+  background-image: url(../images/project1.jpg);
+  cursor: not-allowed;
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+ grid-row-start: 1;
+  grid-row-end: 3; */
  
-}
+  }
+  
+  .project2{
+    grid-template-areas: project2;
+    background-image: url(../images/02-portfolio-2.jpg);
+    cursor: not-allowed;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+   grid-row-start: 3;
+    grid-row-end: 5;
+   */
+  }
+  .project3{
+    grid-template-areas: project3;
+  background-image: url(../images/02-run-buddy.jpg);
+  cursor: not-allowed;
+  /* grid-column-start: 1;
+    grid-column-end: 3;
+   grid-row-start: 5;
+    grid-row-end: 6; */
+  }
+  
+  .project4{
+  
+    grid-template-areas: project4;
+    background-image: url(../images/project4.jpg);
+    cursor: pointer;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5; */
+   }
+  
+  .project5{
+  
+    grid-template-areas: project5;
+  background-image: url(../images/02-portfolio-4.jpg);
+  cursor: not-allowed;
+  /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6; */
+  }
 
-.project3{
-  grid-template-areas: project3;
-background-image: url(../images/02-run-buddy.jpg);
-
-}
-
-.project4{
-
-  grid-template-areas: project4;
-  background-image: url(../images/project4.jpg);
  
+   .label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    height: 180px;
+    width: 250px;
 
-}
+    color: var(--H2-FCOLOR);
+    
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  
+  }
+  .label p{
+    font-size:15px ;
+    background-color: var(--H2-BGCOLOR);
 
-.project5{
+  }
+  .label h3{
+    font-size: 25px;
+    background-color: var(--H2-BGCOLOR);
+    
+  }
 
-  grid-template-areas: project3;
-background-image: url(../images/02-portfolio-4.jpg);
+  .overlay{
+    background-color: #98b7b8;
+    position: relative;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+  }
 
-}
-
-#contact{
-  display: flex;
-  border-color: var(--border-color);
-  color: var(--H2-FCOLOR);
-}
-
+/* CONTACT ME */
 
  .contact-section{
     display: flex;
@@ -275,7 +345,10 @@ background-image: url(../images/02-portfolio-4.jpg);
   
   .contact-section h2{
     border-bottom: solid 4px;
+    border-color: var(--border-color);
     padding: 2px 50px;
+    color: var(--H2-FCOLOR);
+    margin-top: 50px;
   }
 
 .contact{
@@ -287,10 +360,10 @@ background-image: url(../images/02-portfolio-4.jpg);
   flex-direction: column;
   padding: 1%;
   align-content: center;
-
+  
+  
   } 
   
-   
   .contact li{
     padding: 5px;
     list-style: none;
@@ -309,10 +382,6 @@ background-image: url(../images/02-portfolio-4.jpg);
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     background-color:#a5a7aa;
   }
-
-
-
-
 
 
 

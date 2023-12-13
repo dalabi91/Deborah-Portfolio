@@ -1,12 +1,17 @@
 :root {
   
-  --HEADER-BGCOLOR: #303137;
+  /* color */
+  --HEADER-BGCOLOR: #303137; 
   --HEADER-COLOR: #4f5465;
   --H1-BGCOLOR: #92cccd;
   --H2-BGCOLOR: #92cccd;
   --H2-FCOLOR: #4f5465;
   --border-color: #4f5465;
+  /* font size */
+  --h1fontsize: 45px;
   --h2-fontsize: 30px;
+  --nav-fontsize: 20px;
+ 
 
   
   
@@ -27,6 +32,11 @@ html{
   background-color: #d6deea;
   scroll-behavior: smooth;
   }
+
+  #about,
+  #work {
+	scroll-margin-top: 17.5vh;
+}
 
 body {
   margin: 0;
@@ -56,7 +66,7 @@ header{
 
 .name h1{
 
-  font-size: 45px;
+  font-size: var(--h1fontsize);
   line-height: normal;
 
 }
@@ -74,7 +84,7 @@ display: flex;
 
 .topNav a{
   color: var(--H1-BGCOLOR);
-  font-size: 20px;
+  font-size: var(--nav-fontsize);
   text-decoration: none;
   padding: 5px 10px;
   
@@ -121,7 +131,8 @@ position: relative;
 .avater-img{
   height: auto;
   border-radius: 15%;
-  width: clamp(100px, 15px, 150px);
+  width: 15%;
+  /* clamp(100px, 15px, 150px) */
 }
 /* ABOUT */
 
@@ -321,6 +332,7 @@ position: relative;
     background-color: var(--H2-BGCOLOR);
     
   }
+  
 
   .overlay{
     background-color: #98b7b8;
@@ -331,7 +343,9 @@ position: relative;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
   }
-
+  .work-section:has(.project:hover) .project:not(:hover) {
+    transform: scale(0.85);
+  }
 /* CONTACT ME */
 
  .contact-section{

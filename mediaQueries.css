@@ -7,7 +7,7 @@
     .name-wrapper{
       padding: 0px 62px
     }
-    
+    /* ! about */
     .about-section {
       justify-content: center;
       grid-template-columns: 70vw;
@@ -28,16 +28,8 @@
        
     }
     
-    .workL{
-      border-bottom: 4px solid var(--border-color);
-        text-align: start;
-        margin-bottom: 3vh;
-        padding-bottom: 3vh;
-        border-right: none;
-       
-    }
-    
-    .workC {
+  /* ! work */
+    .work-section {
       justify-content: center;
       grid-template-columns: 70vw;
       grid-template-rows: repeat(3, auto);
@@ -46,6 +38,16 @@
         "workC"
         "workR";
     }
+
+    .workL{
+        border-bottom: 4px solid var(--border-color);
+          text-align: start;
+          margin-bottom: 3vh;
+          padding-bottom: 3vh;
+          border-right: none;
+         
+      }
+      
     
     .workC{
       grid-template-columns: 70vw;
@@ -57,7 +59,71 @@
         "project4 "
         "project5 ";
     }
-    .label {
-      height: 25px;
-    }
+    
+}
+/* ! screen >max 1280 */
+@media only screen and (max-width: 120px){
+
+/*! about */
+
+.about-section {
+    justify-content: center;
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "aboutL"
+        "aboutC"
+        "aboutR";
+}
+
+.aboutC p {
+    font-size: var(--F-NORMAL);
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+    line-height: 1.2rem;
+    max-width: 100%;
+    
+}
+.aboutL h2{
+    border-bottom: 4px solid var(--border-color);
+      text-align: start;
+      margin-bottom: 3vh;
+      padding-bottom: 3vh;
+      border-right: none;
+     
+  }
+
+/*! work */
+
+.work-section {
+    justify-content: space-between;
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "workL"
+        "workC"
+        "workR";
+}
+
+.workC {
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(5, 350px);
+    grid-template-areas:
+        "project1 "
+        "project2 "
+        "project3 "
+        "project4 "
+        "project5 ";
+}
+
+
+.workL{
+    border-bottom: 4px solid var(--border-color);
+      text-align: start;
+      margin-bottom: 3vh;
+      padding-bottom: 3vh;
+      border-right: none;
+     
+  }
+
 }

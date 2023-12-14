@@ -129,13 +129,16 @@ position: relative;
   display: flex;
   align-items: center;
   margin-top: 20px;
+    
 }
-.avater-img{
+.avatar-img{
   height: auto;
-  border-radius: 15%;
-  width: 15%;
-  /* clamp(100px, 15px, 150px) */
+  width: 250px;
+  border-radius: 12px;
+  border: solid;
+  border-width: thin;
 }
+
 /* ABOUT */
 
 .about-section{
@@ -291,19 +294,20 @@ position: relative;
     height: 180px;
     width: 100%;
     color: var(--H2-FCOLOR);
-  
-  
+    border-radius: 15px;
   }
   .label p{
     font-size:15px ;
     background-color: var(--H2-BGCOLOR);
-  
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 
   }
   .label h3{
     font-size: 25px;
     background-color: var(--H2-BGCOLOR);
-    
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
   }
   
 
@@ -313,7 +317,7 @@ position: relative;
     opacity: 0.4;
     width: 100%;
     height: 100%;
-    border-radius: 2px;
+    border-radius: 63px;
     transition: all 0.2s ease-in-out;
   }
   .work-section:has(.project:hover) .project:not(:hover) {

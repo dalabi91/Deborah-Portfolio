@@ -27,6 +27,7 @@
         border-right: none;
        
     }
+  
     
   /* ! work */
     .work-section {
@@ -89,6 +90,9 @@
      
   }
   
+  .aboutC article{
+    margin-top: 1rem;
+  }
 /* ! work */
   .work-section {
     justify-content: center;
@@ -121,4 +125,7 @@
       "project5 ";
   }
   
+  .label {
+    height: 106px;
+  }
 }

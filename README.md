@@ -1,14 +1,14 @@
 # Deborah's Portfolio
 
-## Overwiew
+## Overview
 
-Welcome to my developer portfolio! This repository showcases my skills and projects completed througout edX web development bootcamp programe to future employers looking to fill a part-time or full-time  position. In  this project i have applied knewly learnt core skill such as grid, flex-box and media queries.
+Welcome to my developer portfolio! This repository showcases my skills and projects completed throughout edX web development bootcamp program to future employers looking to fill a part-time or full-time  position. In  this project i have applied newly learnt core skill such as grid, flex-box and media queries.
 
 
 
 ## Project Goals
 
-The primary goal for this project  is to have a portfolio that satifies a typical hiring manager's needs. To achieve this, CSS and HTML language were used ensuring all acceptance criteria are covered/met.
+The primary goal for this project  is to have a portfolio that satisfies a typical hiring manager's needs. To achieve this, CSS and HTML language were used ensuring all acceptance criteria are covered/met.
 
 ### Acceptance Criteria
 
@@ -27,7 +27,7 @@ The primary goal for this project  is to have a portfolio that satifies a typica
 ## Getting started
 
 ### Prerequisites
-Before starting this project, i made sure i familirise myself with the acceptance criteria and understood the requirement.
+Before starting this project, i made sure i familiarize myself with the acceptance criteria and understood the requirement.
 
 I also made sure all teh asset were in the correct folder. Also made sure that all images are in png and those that are not were converted. The reason for this is because PNG files benefit from lossless compression, meaning that no data is lost when the images are compressed. This makes it easier and smoother to work with image.
 
@@ -37,17 +37,17 @@ This webpage can be accessed by [**clicking here**]( https://dalabi91.github.io/
 
 To use the webpage, click on any of the navigation bar to get to desired content section.
 
-This webpage can be viewed on various screens and devices then the layout is responsive and adapts to your viewport. The screenshoots below displays the web page on different screen sizes. If there is a screen size you desire and it's not here, please free to contact me.
+This webpage can be viewed on various screens and devices then the layout is responsive and adapts to your viewport. The screenshots below displays the web page on different screen sizes. If there is a screen size you desire and it's not here, please free to contact me.
 
 
 ## Desktop
-<!-- input screenshoot -->
-![Destop](./images_png/media%20Q/desktop%20view.png)
+<!-- input screenshot -->
+![Desktop](./images_png/media%20Q/desktop%20view.png)
 
 ## Media Query
 
 ### Max width 600px
-<!-- input screeshoot -->
+<!-- input screenshot -->
 ![Max 600px](./images_png/media%20Q/max_600px.png)
 
 ### Max width 1024px

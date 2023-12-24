@@ -2,13 +2,13 @@
 
 ## Overview
 
-Welcome to my developer portfolio! This repository showcases my skills and projects completed throughout edX web development bootcamp program to future employers looking to fill a part-time or full-time  position. In  this project i have applied newly learnt core skill such as grid, flex-box and media queries.
+Welcome to my developer portfolio! This repository showcases my skills and projects completed throughout the edX web development bootcamp program to future employers looking to fill a part-time or full-time  position. In  this project, I have applied newly learned core skills such as grid, flex-box, and media queries.
 
 
 
 ## Project Goals
 
-The primary goal for this project  is to have a portfolio that satisfies a typical hiring manager's needs. To achieve this, CSS and HTML language were used ensuring all acceptance criteria are covered/met.
+The primary goal for this project  is to have a portfolio that satisfies a typical hiring manager's needs. To achieve this, CSS and HTML language were used ensuring all acceptance criteria were covered/met.
 
 ### Acceptance Criteria
 
@@ -18,7 +18,7 @@ The primary goal for this project  is to have a portfolio that satisfies a typic
 
     3. When viewing the section about my work, the section contains titled images of my applications
 
-    4. When presented with my first application then that application's image should be larger in size than the others
+    4. When presented with my first application that application's image should be larger in size than the others
 
     5. When images of the applications are clicked then the user is taken to that deployed application
 
@@ -27,17 +27,17 @@ The primary goal for this project  is to have a portfolio that satisfies a typic
 ## Getting started
 
 ### Prerequisites
-Before starting this project, i made sure i familiarize myself with the acceptance criteria and understood the requirement.
+Before starting this project, I made sure I familiarized myself with the acceptance criteria and understood the requirements.
 
-I also made sure all teh asset were in the correct folder. Also made sure that all images are in png and those that are not were converted. The reason for this is because PNG files benefit from lossless compression, meaning that no data is lost when the images are compressed. This makes it easier and smoother to work with image.
+I also made sure all the assets were in the correct folder. Also, make sure that all images are in PNG and those that are not were converted. The reason for this is because PNG files benefit from lossless compression, meaning that no data is lost when the images are compressed. This makes it easier and smoother to work with images.
 
 ## Usage
 
 This webpage can be accessed by [**clicking here**]( https://dalabi91.github.io/Deborah-Portfolio/)
 
-To use the webpage, click on any of the navigation bar to get to desired content section.
+To use the webpage, click on any of the navigation bars to get to the desired content section.
 
-This webpage can be viewed on various screens and devices then the layout is responsive and adapts to your viewport. The screenshots below displays the web page on different screen sizes. If there is a screen size you desire and it's not here, please free to contact me.
+This webpage can be viewed on various screens and devices then the layout is responsive and adapts to your viewport. The screenshots below display the web page on different screen sizes. If there is a screen size you desire and it's not here, please free to contact me.
 
 
 ## Desktop
